@@ -3,6 +3,7 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import NavLinks from '../components/NavLinks.astro';
 import weezImg from '../assets/weez.jpg';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -26,6 +27,7 @@ import '../styles/global.css';
     <NavLinks />
     <h1>Hello Wooooorld!</h1>
     <img id="weez" src={weezImg.src} alt="Weez" />
+    <Footer />
   </body>
 	<style>
 		#weez {

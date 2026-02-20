@@ -1,6 +1,7 @@
 ---
 import NavLinks from '../components/NavLinks.astro';
 import '../styles/global.css';
+import Footer from '../components/Footer.astro';
 
 const pageTitle = "About Meeeeee";
 const identity = {
@@ -48,6 +49,7 @@ const goal = 3;
 {finished && <p>I finished this tutorial!</p>}
 
 {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+    <Footer />
   </body>
   <style define:vars={{skillColor}}>
       .skill {
