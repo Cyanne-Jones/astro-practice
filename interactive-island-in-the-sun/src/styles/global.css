@@ -1,5 +1,6 @@
 html {
-  background-color: #da97ee;
+  background: linear-gradient(#9055A2, #E8C1C5);
+  height: 100%;
   font-family: sans-serif;
 }
 
@@ -9,6 +10,7 @@ body {
   max-width: 80ch;
   padding: 1rem;
   line-height: 1.5;
+  color: #2E294E;
 }
 
 * {
@@ -18,4 +20,12 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+}
+
+#color-def-storage {
+  color: #011638;
+  color: #2E294E;
+  color:#9055A2;
+  color: #D499B9;
+  color: #E8C1C5;
 }
