@@ -1,7 +1,10 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import NavLinks from '../components/NavLinks.astro';
 import weezImg from '../assets/weez.jpg';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -21,13 +24,10 @@ import weezImg from '../assets/weez.jpg';
     <title>Home is where the HTML is</title>
   </head>
   <body>
+    <NavLinks />
     <h1>Hello Wooooorld!</h1>
     <img id="weez" src={weezImg.src} alt="Weez" />
-
-		<a href="/">Home</a>
-    <a href="/catboi/">Catboi</a>
-		<a href="/blog/">Blog</a>
-    <a href="/about/">About</a>
+    <Footer />
   </body>
 	<style>
 		#weez {

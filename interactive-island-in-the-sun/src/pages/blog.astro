@@ -1,5 +1,7 @@
 ---
-import catboiImg from '../assets/catboi.png'
+import NavLinks from '../components/NavLinks.astro';
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -11,15 +13,38 @@ import catboiImg from '../assets/catboi.png'
     <title>Blaawg</title>
   </head>
   <body>
+    <NavLinks />
     <h1>Dear Diary, here is My Super Cool Blog™</h1>
     <p>This is where I will post about my wacky little days.</p>
     <ul>
-      <li><a href="/posts/post-1/">Post 1</a></li>
-      <li><a href="/posts/post-2/">Post 2</a></li>
-      <li><a href="/posts/post-3/">Post 3</a></li>
+      <li><button><a href="/posts/post-1/">Post 1</a></button></li>
+      <li><button><a href="/posts/post-2/">Post 2</a></button></li>
+      <li><button><a href="/posts/post-3/">Post 3</a></button></li>
     </ul>
-    <a href="/">Home</a>
-    <a href="/catboi/">Catboi</a>
-    <a href="/blog/">Blog</a>
+    <Footer />
   </body>
+  <style>
+    button {
+      background-color: #E8C1C5;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      &:hover {
+        background-color: #D499B9;
+        a {
+          color: #2E294E;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #9055A2;
+        font-weight: bold;
+      }
+    }
+
+    li {
+      padding: 8px;
+    }
+  </style>
 </html>
