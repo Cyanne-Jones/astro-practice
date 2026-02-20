@@ -1,5 +1,7 @@
 ---
-import catboiImg from '../assets/catboi.png'
+import catboiImg from '../assets/catboi.png';
+import NavLinks from '../components/NavLinks.astro';
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -11,10 +13,8 @@ import catboiImg from '../assets/catboi.png'
     <title>Hell yeah</title>
   </head>
   <body>
+    <NavLinks />
     <h1>Catboi is handsome</h1>
     <img id="catboi" src={catboiImg.src} alt="Catboi" />
-    <a href="/">Home</a>
-    <a href="/catboi/">Catboi</a>
-    <a href="/blog/">Blog</a>
   </body>
 </html>
