@@ -46,6 +46,7 @@ h1 {
 .menu:hover {
   background-color: #E8C1C5;
   cursor: pointer;
+  color:#9055A2;
 }
 
 .nav-links {
