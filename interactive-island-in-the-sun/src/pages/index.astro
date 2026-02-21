@@ -28,14 +28,6 @@ import '../styles/global.css';
     <h1>Hello Wooooorld!</h1>
     <img id="weez" src={weezImg.src} alt="Weez" />
     <Footer />
-    <script>
-    const menu = document.querySelector('.menu');
-
-      menu?.addEventListener('click', () => {
-        const isExpanded = menu.getAttribute('aria-expanded') === 'true';
-        menu.setAttribute('aria-expanded', `${!isExpanded}`);
-      });
-    </script>
   </body>
 	<style>
 		#weez {
